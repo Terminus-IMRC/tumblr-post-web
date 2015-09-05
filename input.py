@@ -10,6 +10,7 @@ sys.dont_write_bytecode = True
 #sys.stdout = codecs.getwriter('utf_8')(sys.stdout)
 
 from parts import *
+from info import *
 
 import cgi
 
