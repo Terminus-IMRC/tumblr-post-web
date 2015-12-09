@@ -9,20 +9,20 @@ print('\r')
 pbname = os.path.basename(sys.argv[0])
 
 print(hh)
-print('<h1> Tumblr posting page / branch </h1>')
+print('<h1> Tumblr / branch </h1>')
 print('<form method="post" action="input.py">')
 
-a = ['text', 'quote', 'link', 'chat']
+a = ['Text', 'Quote', 'Link', 'Chat']
 for i in range(len(a)):
-	if a[i] == 'quote':
+	if a[i] == 'Quote':
 		checked_string = ' checked'
 	else:
 		checked_string = ''
-	print('<input type="radio" id="r%d" name="type" value="%s"%s>' % (i, a[i], checked_string))
+	print('<input type="radio" id="r%d" name="type" value="%s"%s>' % (i, a[i].lower(), checked_string))
 	print('<label for="r%d">%s</label>' % (i, a[i]))
 
 print('<br><br>')
-print('<input type="submit" value="post">')
+print('<input type="submit" value="Next">')
 print('</form>')
 print
 print('</body>')

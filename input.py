@@ -28,7 +28,7 @@ if ms != '':
 else:
 	type = form.getfirst('type', '')
 
-	print '<h1> Tumblr posting page / input </h1>'
+	print '<h1> Tumblr / input </h1>'
 	print '<form method="post" action="post.py">'
 	print '<input type="hidden" name="type" value="%s">' % type
 
