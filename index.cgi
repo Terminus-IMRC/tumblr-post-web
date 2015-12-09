@@ -14,7 +14,7 @@ print('<form method="post" action="input.py">')
 
 a = ['text', 'quote', 'link', 'chat']
 for i in range(len(a)):
-	if i == 0:
+	if a[i] == 'quote':
 		checked_string = ' checked'
 	else:
 		checked_string = ''
