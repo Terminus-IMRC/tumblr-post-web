@@ -40,21 +40,15 @@ else:
 	elif type == 'quote':
 		a = ['quote', 'source']
 	elif type == 'link':
-		a = ['title', 'url']
+		a = ['title', 'url', 'desc']
 	elif type == 'chat':
 		a = ['title', 'conv']
 	else:
 		print '<strong>error: unknown type: %s</strong>' % type
 
-	ms = ''
-	for i in a:
-		if not form.has_key(i):
-			ms += ' ' + i
-	if ms != '':
-		print '<strong>error: %s: missing field(s):%s</strong>' % (type, ms)
+	if type == 'text' and ((not form.has_key('title')) or (not form.has_key('body'))):
+		print '<strong>error: %s: fill at least a box</strong>' % (type)
 	else:
-		if type == 'link':
-			a.append('desc')
 		aa = []
 		for i in range(len(a)):
 			if form.has_key(a[i]):

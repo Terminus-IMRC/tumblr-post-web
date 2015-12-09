@@ -35,11 +35,11 @@ else:
 	if type == 'text':
 		print 'Title:'
 		print '<br>'
-		print '<input type="text" name="title" required="required">'
+		print '<input type="text" name="title">'
 		print '<br>'
 		print 'Body:'
 		print '<br>'
-		print '<textarea name="body" required="required"></textarea>'
+		print '<textarea name="body"></textarea>'
 		print '<br>'
 	elif type == 'quote':
 		print 'Quote:'
@@ -48,12 +48,12 @@ else:
 		print '<br>'
 		print 'Source:'
 		print '<br>'
-		print '<input type="text" name="source" required="required">'
+		print '<input type="text" name="source">'
 		print '<br>'
 	elif type == 'link':
 		print 'Title:'
 		print '<br>'
-		print '<input type="text" name="title" required="required">'
+		print '<input type="text" name="title">'
 		print '<br>'
 		print 'URL:'
 		print '<input type="text" name="url" required="required">'
@@ -64,7 +64,7 @@ else:
 	elif type == 'chat':
 		print 'Title:'
 		print '<br>'
-		print '<input type="text" name="title" required="required">'
+		print '<input type="text" name="title">'
 		print '<br>'
 		print 'Conv:'
 		print '<br>'
