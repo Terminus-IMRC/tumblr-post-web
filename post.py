@@ -46,7 +46,7 @@ else:
 	else:
 		print '<strong>error: unknown type: %s</strong>' % type
 
-	if type == 'text' and ((not form.has_key('title')) or (not form.has_key('body'))):
+	if type == 'text' and not (form.has_key('title') or form.has_key('body')):
 		print '<strong>error: %s: fill at least a box</strong>' % (type)
 	else:
 		aa = []
